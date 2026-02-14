@@ -1,1 +1,46 @@
-I am updating it for checking the various status.
+I am updating it for checking the various status of Git stages after modifying it.
+
+
+
+
+
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)      
+        modified:   app.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git add .
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app.txt
+
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git commit -m " new changes"
+[main eb71656]  new changes
+ 1 file changed, 1 insertion(+)
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 287 bytes | 6.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Neetesh11b/Git_commands.git
+   e71e923..eb71656  main -> main
+neetesh_alpha-1@LENOVO:/mnt/c/Users/91639/Internshala/Git_commands/init-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
